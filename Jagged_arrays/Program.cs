@@ -10,6 +10,8 @@ namespace Jagged_arrays
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*--*--*--*--*--*   Задание №1   *--*--*--*--*--*");
+            Console.WriteLine("");
             Random random = new Random();
 
             int[][] Array = new int[5][];
@@ -86,6 +88,25 @@ namespace Jagged_arrays
                     i = dopIter;
                     Q = false;
                     W = false;
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("*--*--*--*--*--*   Задание №2   *--*--*--*--*--*");
+            Console.WriteLine("");
+
+            char[][] NewArray = new char[4][];
+            for (int i = 0; i < NewArray.Length; i++)
+                NewArray[i] = new char[6];
+
+            for (int i = 0; i < NewArray.Length; i++)
+            {
+                for (int j = 0; j < NewArray[i].Length - i; j++)
+                {
+                    NewArray[i][j] = '$';
+
+                    Console.Write("{0,4}", NewArray[i][j]);
                 }
                 Console.WriteLine();
             }
